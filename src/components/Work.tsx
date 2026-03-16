@@ -28,8 +28,7 @@ const Work = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  const goToSlide = useCallback(
-    (index) => {
+  const goToSlide = useCallback((index: number) => {
       if (isAnimating) return;
       setIsAnimating(true);
       setCurrentIndex(index);
